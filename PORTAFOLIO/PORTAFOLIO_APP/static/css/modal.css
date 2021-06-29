@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.modalcontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+}
+.modalcontainer.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalcontainer-electro.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.ventana-modal{
+    background: seashell;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0,0, 0.2);
+    text-align: center;
+    z-index: 3;
+    width: 600px;
+    height: 640px;
+}
+
+.ventana-modal{
+    margin: 0;
+    vertical-align: center ;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 30px;
+}
+.ventana-modal p{
+    font-size: 17px;
+    opacity: 0.7;
+    font-family: 'Montserrat';
+    color: black;
+}
+
+.ventana-modal img{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+#cerrar{
+    border: 0;
+    background: white;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100px;
+}
+#cerrar:hover{
+    background-image: radial-gradient(circle at 12.5% 12.5%, #adc743 0, #97c348 10%, #80bd4e 20%, #67b452 30%, #4da956 40%, #2f9c58 50%, #008f59 60%, #00835a 70%, #00795b 80%, #00715d 90%, #006a60 100%);
+    color: white;
+    transition: opacity 0.3s ease;
+}
+.cabecera-modal{
+    margin: 0;
+    background-image: radial-gradient(circle at 12.5% 12.5%, #adc743 0, #97c348 10%, #80bd4e 20%, #67b452 30%, #4da956 40%, #2f9c58 50%, #008f59 60%, #00835a 70%, #00795b 80%, #00715d 90%, #006a60 100%);
+    width: 600px;
+    height: 80px;
+    margin-left: -50px;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Modal-Electro */
+
+#cerrar-electro{
+    border: 0;
+    background: white;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100px;
+}
+#cerrar-electro:hover{
+    background:#00b0c7;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+.cabecera-modal-electro{
+    margin: 0;
+    background:#00b0c7;
+    width: 600px;
+    height: 80px;
+    margin-left: -50px;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+@media (max-width:768px){
+    /* .ventana-modal{
+        background: seashell;
+        width: 600px;
+        max-width: 100%;
+        padding: 30px 50px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0,0, 0.2);
+        text-align: center;
+        z-index: 3;
+        width: 600px;
+        height: 640px;
+    } */
+    
+    .ventana-modal{
+        margin: 0;
+        vertical-align: center ;
+        font-family: 'Montserrat';
+        color: white;
+        width: 330px;
+        height: 585px;
+    }
+    .ventana-modal p{
+        font-size: 13.2px;
+        opacity: 1;
+        font-family: 'Montserrat';
+        color: black;
+        text-align: justify;
+    }
+    
+    .ventana-modal img{
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        display: block;
+    }
+    #cerrar{
+        border: 0;
+        background: white;
+        font-size: 15px;
+        font-family: 'Montserrat';
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px solid gray;
+        width: 100px;
+    }    
+    .cabecera-modal{
+        margin: 0;
+        background-image: radial-gradient(circle at 12.5% 12.5%, #adc743 0, #97c348 10%, #80bd4e 20%, #67b452 30%, #4da956 40%, #2f9c58 50%, #008f59 60%, #00835a 70%, #00795b 80%, #00715d 90%, #006a60 100%);
+        width: 330px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        height: 80px;
+        margin-left: -50px;
+        z-index: 1;
+        margin-top: -30px;
+        padding-top: 14px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+        
+    .cabecera-modal-electro{
+        margin: 0;
+        background:#00b0c7;
+        width: 330px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        height: 80px;
+        margin-left: -50px;
+        z-index: 1;
+        margin-top: -30px;
+        padding-top: 14px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    #cerrar-electro{
+        border: 0;
+        background: white;
+        font-size: 15px;
+        font-family: 'Montserrat';
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px solid gray;
+        width: 100px;
+    }
+
+}
