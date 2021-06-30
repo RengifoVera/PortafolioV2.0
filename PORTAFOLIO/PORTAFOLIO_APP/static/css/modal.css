@@ -23,6 +23,18 @@
     opacity: 1;
     pointer-events: auto;
 }
+.modalcontainer-resume.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalcontainer-experiencia.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modalcontainer-estudios.show{
+    opacity: 1;
+    pointer-events: auto;
+}
 .ventana-modal{
     background: seashell;
     width: 600px;
@@ -113,22 +125,118 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+/* Modal Experiencia */
+#cerrar-experiencia{
+    border: 0;
+    background: white;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100px;
+}
+
+#open-experiencia img{
+    height: 210px;
+    width: 320px;
+    display: block;
+    margin: auto;
+    border: 5px solid  rgb(52, 73, 94 );
+    transition: all .3s ease;
+
+}
+#open-experiencia img:hover{
+    transform: scale(.9,.9);
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.cabecera-modal-experiencia{
+    margin: 0;
+    background:#00b0c7;
+    width: 600px;
+    height: 80px;
+    margin-left: -50px;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Modal Estudios */
+
+#open-estudios img{
+    height: 210px;
+    width: 320px;
+    display: block;
+    margin: auto;
+    border: 5px solid  rgb(52, 73, 94 );
+    transition: all .3s ease;
+
+}
+#open-estudios img:hover{
+    transform: scale(.9,.9);
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.cabecera-modal-estudios{
+    margin: 0;
+    background:#00b0c7;
+    width: 600px;
+    height: 80px;
+    margin-left: -50px;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#cerrar-estudios{
+    border: 0;
+    background: white;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100px;
+}
+
+/* Modal Resume */
 
 
-@media (max-width:768px){
-    /* .ventana-modal{
-        background: seashell;
-        width: 600px;
-        max-width: 100%;
-        padding: 30px 50px;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0,0, 0.2);
-        text-align: center;
-        z-index: 3;
-        width: 600px;
-        height: 640px;
-    } */
-    
+#open-resume img:hover{
+    transform: scale(.9,.9);
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.cabecera-modal-resume{
+    margin: 0;
+    background:#00b0c7;
+    width: 600px;
+    height: 80px;
+    margin-left: -50px;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#cerrar-resume{
+    border: 0;
+    background: white;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 100px;
+}
+@media (max-width:768px){   
     .ventana-modal{
         margin: 0;
         vertical-align: center ;
@@ -201,4 +309,64 @@
         width: 100px;
     }
 
+    #open-experiencia img {
+        height: 140px;
+        width: 210px;
+        border: 5px solid  rgb(52, 73, 94 );
+        transition: all .2s ease;
+        display: block;
+        margin: auto;
+    }
+    .cabecera-modal-experiencia{
+        margin: 0;
+        background:#00b0c7;
+        width: 330px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        height: 80px;
+        margin-left: -50px;
+        z-index: 1;
+        margin-top: -30px;
+        padding-top: 14px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .cabecera-modal-estudios{
+        margin: 0;
+        background:#00b0c7;
+        width: 330px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        height: 80px;
+        margin-left: -50px;
+        z-index: 1;
+        margin-top: -30px;
+        padding-top: 14px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    #open-estudios img {
+        height: 140px;
+        width: 210px;
+        border: 5px solid  rgb(52, 73, 94 );
+        transition: all .2s ease;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .cabecera-modal-resume{
+        margin: 0;
+        background:#00b0c7;
+        width: 330px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        height: 80px;
+        margin-left: -50px;
+        z-index: 1;
+        margin-top: -30px;
+        padding-top: 14px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
 }

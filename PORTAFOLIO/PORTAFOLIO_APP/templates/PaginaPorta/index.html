@@ -19,27 +19,40 @@
 
 </head>
 <body>
-        <!-- Modal -->
-        <div class="modalcontainer"  id="modalcontainer">
-          <div class="ventana-modal">
-            <div class="cabecera-modal">
-                Club Internacional Tulua
-                <h6>Web</h6>
+  <div>
+            <!-- Modal Resume  -->          
+            <div class="modalcontainer"  id="modalcontainer-resume">
+                <div class="ventana-modal">
+                  <div class="cabecera-modal-resume">
+                       Resume
+                       <h6>Web</h6>
+                  </div>
+                    <img src="{% static 'img/imagen.png' %}">
+                    <hr class="section-hr">
+                    <button id="cerrar-resume">Close</button>
+                        </div>
             </div>
-            <img src="{% static 'img/imagen.png' %}">
-            <p>Portafolio web del llamado <a href="https://internacionaltulua.pythonanywhere.com/" target="_blank" style="text-decoration: none;">  <i class="fas fa-external-link-alt"></i> </a> Club Internacional de Futbol Tulua 
-              la web cuenta con las descripcion detallada de los servicios que presta dicho club, 
-               fue desarrollada con las buenas de practicas del framework web Django,
-              usando tambien CSS,JavaScript,GSAP entre otras librerias para una estetica muy agradable 
-               tambien y con un diseño responsive agrable para el usuario final.
-            </p>
-            <hr class="section-hr">
-            <button id="cerrar">Close</button>
-          </div>
-      </div>
+            <!-- Modal Internacional -->
+            <div class="modalcontainer"  id="modalcontainer">
+                  <div class="ventana-modal">
+                    <div class="cabecera-modal">
+                        Club Internacional Tulua
+                        <h6>Web</h6>
+                    </div>
+                    <img src="{% static 'img/imagen.png' %}">
+                    <p>Portafolio web del llamado <a href="https://internacionaltulua.pythonanywhere.com/" target="_blank" style="text-decoration: none;">  <i class="fas fa-external-link-alt"></i> </a> Club Internacional de Futbol Tulua 
+                      la web cuenta con las descripcion detallada de los servicios que presta dicho club, 
+                      fue desarrollada con las buenas de practicas del framework web Django,
+                      usando tambien CSS,JavaScript,GSAP entre otras librerias para una estetica muy agradable 
+                      tambien y con un diseño responsive agrable para el usuario final.
+                    </p>
+                    <hr class="section-hr">
+                    <button id="cerrar">Close</button>
+                  </div>
+            </div>
 
-              <!-- Modal2 -->
-              <div class="modalcontainer"  id="modalcontainer-electro" >
+            <!-- Modal electro -->
+            <div class="modalcontainer"  id="modalcontainer-electro" >
                 <div class="ventana-modal">
                   <div class="cabecera-modal-electro">
                       Electro Aires & Aires
@@ -54,6 +67,34 @@
                   <button id="cerrar-electro">Close</button>
                 </div>
             </div>
+
+            <!-- Modal Experiencia -->
+            <div class="modalcontainer"  id="modalcontainer-experiencia" >
+              <div class="ventana-modal">
+                  <div class="cabecera-modal-experiencia">
+                     Experiencia
+                    <h6>Desktop App</h6>
+                  </div>
+                    <img style="margin-top: 30px; margin-bottom: 30px; height: 250px; width: 250px;" src="{% static 'img/estudios.jpg' %}">
+                    <hr class="section-hr">
+                    <button id="cerrar-experiencia">Close</button>
+                 </div>
+            </div>
+
+            <!-- Modal Estudios -->
+            <div class="modalcontainer"  id="modalcontainer-estudios" >
+                <div class="ventana-modal">
+                    <div class="cabecera-modal-estudios">
+                      Estudios
+                          <h6>Desktop App</h6>
+                    </div>
+                    <img style="margin-top: 30px; margin-bottom: 30px; height: 250px; width: 250px;" src="{% static 'img/estudios.jpg' %}">
+                      <hr class="section-hr">
+                        <button id="cerrar-estudios">Close</button>
+                </div>
+            </div>
+
+    </div>
 
     <nav class="navbarr">
         <div class="content">
@@ -95,6 +136,9 @@
             <span class="word d">3d's Max</span>
             <span class="word photo">PhotoShop</span>
           </p>
+
+          <button type="button" style="margin-top: 50px;" class="btn btn-primary" id="open-resume">Show Resume</button>
+        
         </div>
         <div class="img-home">
           <img src="{% static 'img/cabeza.png' %}">
@@ -178,7 +222,15 @@
                <div class="container">
                  <div class="row">
                    <div class="col-md-6">
+                      <a id="open-experiencia" href="#modalcontainer-experiencia">
+                        <img src="{% static 'img/experiencia.jpg' %}">
+                      </a>
                    </div>
+                   <div class="col-md-6">
+                    <a id="open-estudios" href="#modalcontainer-estudios">
+                      <img src="{% static 'img/estudios.jpg' %}">
+                    </a>
+                 </div>
                  </div>
                </div>
             </section>
