@@ -21,6 +21,11 @@ const modalcontainer_resume = document.getElementById('modalcontainer-resume');
 const open_resume = document.getElementById('open-resume');
 const cerrar_resume =  document.getElementById('cerrar-resume');
 
+// Modal-resume
+const modalcontainer_contacto = document.getElementById('modalcontainer-contacto');
+const open_contacto = document.getElementById('open-contacto');
+const cerrar_contacto =  document.getElementById('cerrar-contacto');
+
 open.addEventListener('click', () =>{
     modalcontainer.classList.add('show');
     window.addEventListener('scroll', disableScroll);
@@ -48,6 +53,11 @@ open_resume.addEventListener('click', () =>{
     window.addEventListener('scroll', disableScroll);
 
 }) 
+open_contacto.addEventListener('click', () =>{
+    modalcontainer_contacto.classList.add('show');
+    window.addEventListener('scroll', disableScroll);
+
+}) 
 
 
 cerrar.addEventListener('click', () =>{
@@ -72,6 +82,10 @@ cerrar_resume.addEventListener('click', () =>{
     modalcontainer_resume.classList.remove('show');
     window.removeEventListener('scroll', disableScroll); 
 }) 
+cerrar_contacto.addEventListener('click', () =>{
+    modalcontainer_contacto.classList.remove('show');
+    window.removeEventListener('scroll', disableScroll); 
+})
 
 
 function disableScroll(){  

@@ -5,12 +5,13 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>Jhon Rengifo | Developer </title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/modal.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="{% static 'img/favicon.png' %}">
@@ -94,33 +95,62 @@
                 </div>
             </div>
 
+            <!-- Modal Contacto -->
+            <div class="modalcontainer"  id="modalcontainer-contacto" >
+              <div class="ventana-modal">
+                  <div class="cabecera-modal-contacto">
+                    <button id="cerrar-contacto"><i class="fas fa-times"></i></button>
+                  </div>
+                  <div class="modalbody">
+                    <h2>Contacto</h2>
+
+                    <div class="correo">
+                        <a href="mailto:rengifo-vera@hotmail.com?Subject=Quiero%20Contactarte">rengifo-vera@hotmail.com </a>
+                    </div>
+                    <h2>Social</h2>
+                    <div class="social">
+                        <a data-toggle="tooltip" title="Facebook" href="https://www.facebook.com/JhonJRVera" target="_blank"  ><i  class="fab fa-facebook"></i></a> &nbsp; 
+                        <a data-toggle="tooltip"  title="Twitter" href=" https://twitter.com/JhonJRVera" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;
+                        <a data-toggle="tooltip"  title="Instagram" href="https://www.instagram.com/jjrv_00/" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;
+                </div>
+              </div>
+          </div>
+          
     </div>
 
-    <nav class="navbarr">
+    <nav class="navbarr" >
         <div class="content">
           <div class="logos">
-            <a href="#">JR          
+            <a href="#inicio">JR          
             </a>
           </div>  
           <ul class="menu-list">
             <div class="icon cancel-btn">
               <i class="fas fa-times"></i>
             </div>
-            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#portafolio">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a id="open-contacto" href="#modalcontainer" >Contact</a></li>
           </ul>
+
+          <ul class="social-media">
+            <li>
+              <a href="https://www.facebook.com/JhonJRVera" target="_blank"  ><i  class="fab fa-facebook"></i></a> &nbsp;
+              <a href="https://www.facebook.com/JhonJRVera" target="_blank"  ><i class="fab fa-github"></i></a> &nbsp;
+              <a href=" https://twitter.com/JhonJRVera" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp; 
+            </li>
+            </ul>
           <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
           </div>
 
           </div>
       </nav>
-      <div class="banner">
+      <div class="banner" id="inicio">
         <section id="presentacion" data-aos="flip-up"> 
-            Hello.      
-          <h3>I'am JhonRengifo <br> Junior FrontEnd Developer</h3>
+            Hello     
+          <h3>I'am Jhon Rengifo <br> Junior FrontEnd Developer</h3> Welcome to my Portafolio.
         </section>
         <div class="text">
           <p>
@@ -137,9 +167,7 @@
             <span class="word d">3d's Max</span>
             <span class="word photo">PhotoShop</span>
           </p>
-
           <button type="button"  id="open-resume">Show Resume</button>
-        
         </div>
         <div class="fondo">
         </div>
@@ -149,7 +177,7 @@
         <div class="content">
             <section class="style-porta" id="portafolio" style="padding: 50px 0 0 0;">
                     <div data-aos="fade-right">
-                        <h1 style="color: black;">Portafolio</h1>
+                        <h1 style="color: black;">Projects</h1>
                         <hr>
                     </div>
                     <div class="container">

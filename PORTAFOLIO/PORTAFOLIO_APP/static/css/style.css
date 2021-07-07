@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -9,6 +10,9 @@
   font-family: 'Poppins', sans-serif;
   
 }
+
+
+
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -155,6 +159,9 @@ html{
   margin-bottom: 10px;
   cursor: pointer;
   transition: all .3s ease;
+  background: #cccccc;
+  border: black 1px dashed;
+  border-radius: 22px;
 }
 .img-por:hover img{
   transform: scale(.8,.8);
@@ -170,10 +177,9 @@ html{
   opacity: 0;
   text-align: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 17px;
   font-family: 'Poppins';
   margin-top: -30px;
-  margin-left: 41px;
 
 }
 .navbarr{
@@ -185,7 +191,7 @@ html{
 }
 
 .navbarr.sticky{
-  background: #fffc52;
+  background: #fde731;
   padding: 10px 0;
   box-shadow: 2px 2px 5px #999;}
 .navbarr .content{
@@ -196,10 +202,20 @@ html{
 
 .navbarr .logos  a{
   display: flex;
-  color: black;
+  color: rgba(33, 33, 33, 0.9);
   font-size: 30px;
-  font-family: 'Gochi Hand';
+  font-family: 'Righteous';
   text-decoration: none;
+}
+.navbarr .social-media li {
+  font-size: 25px; 
+  list-style: none; 
+  
+  
+}
+.navbarr .social-media li a {
+  text-decoration: none;
+  color: #212121; 
 }
 
 .navbarr .menu-list{
@@ -209,7 +225,7 @@ html{
   list-style: none;
 }
 .menu-list li a{
-  color: black;
+  color: rgba(33, 33, 33, 0.9);
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -232,7 +248,7 @@ html{
   background-size: 100% 2px;
 }
 .banner{
-  background: #fffc52;
+  background: #fde731;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -246,10 +262,10 @@ html{
 }
 
 #presentacion{
-  padding: 150px 0 0 100px;
+  padding: 95px 0 0 100px;
   font-family: 'Righteous';
-  color: rgb(0, 0, 0);
-  font-size: 150px;
+  color: rgb(255, 250, 222);
+  font-size: 100px;
 }
 /* Letras */
 .word {
@@ -270,7 +286,7 @@ html{
   align-items: center;
   margin-top: 50px;
   border-radius: 5px;
-  background: #000000;
+  background: rgba(33, 33, 33, 0.9);
   color: #fff;
   padding: 8px 14px;
   border: none;
@@ -314,40 +330,40 @@ html{
 }
 
 .wisteria {
-  color: black;
+  color:rgba(33, 33, 33, 0.9);
 }
 
 .belize {
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 
 .pomegranate {
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 
 .green {
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 
 .midnight {
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .post{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .bash{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .git{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .react{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .boops{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .d{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 .photo{
-  color: black;}
+  color:rgba(33, 33, 33, 0.9);}
 
 /* ---FIN LETRAS--- */
 
 .banner .fondo{
-  background: #fffc52;
-  margin-top: 910px;
+  background: #fde731;
+  margin-top: 880px;
   z-index: 0;
   width: 100%;
   height: 800px;
@@ -433,10 +449,13 @@ html{
   .navbarr .menu-list li a{
     font-size: 23px;
     margin-left: -100%;
+    font-family: 'Montserrat';
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .navbarr.show .menu-list li a{
+    color: white;
     margin-left: 0px;
+    font-size: 20px;
   }
   .container .img-por img{
     height: 300px;
@@ -451,14 +470,14 @@ html{
     display: flex;
     color: rgb(0, 0, 0);
     font-size: 25px;
-    font-family: 'Gochi Hand';
+    font-family: 'Righteous';
     text-decoration: none;
   }
   #presentacion{
-    padding: 200px 20px 0px 20px;
+    padding: 80px 20px 0px 20px;
     font-family: 'Righteous';
-    color: rgb(0, 0, 0);
-    font-size: 80px;
+    color: rgb(250, 250, 250);
+    font-size: 60px;
     text-align: center;
   }
   #presentacion h3{
@@ -513,8 +532,8 @@ html{
   }
 
   .banner .fondo{
-    background: #fffc52;
-    margin-top: 1150px;
+    background: #fde731;
+    margin-top: 1050px;
     z-index: 0;
     width: 101%;
     height: 1070px;
