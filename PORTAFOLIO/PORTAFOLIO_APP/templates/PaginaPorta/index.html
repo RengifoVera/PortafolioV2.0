@@ -137,7 +137,7 @@
           <ul class="social-media">
             <li>
               <a href="https://www.facebook.com/JhonJRVera" target="_blank"  ><i  class="fab fa-facebook"></i></a> &nbsp;
-              <a href="https://www.facebook.com/JhonJRVera" target="_blank"  ><i class="fab fa-github"></i></a> &nbsp;
+              <a href="https://github.com/RengifoVera" target="_blank"  ><i class="fab fa-github"></i></a> &nbsp;
               <a href=" https://twitter.com/JhonJRVera" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp; 
             </li>
             </ul>
@@ -148,59 +148,95 @@
           </div>
       </nav>
       <div class="banner" id="inicio">
-        <section id="presentacion" data-aos="flip-up"> 
-            Hello     
-          <h3>I'am Jhon Rengifo <br> Junior FrontEnd Developer</h3> Welcome to my Portafolio.
-        </section>
-        <div class="text">
+        <section id="presentacion" >   
+          <img id="fondo" src="{% static 'img/fondo.png' %}" >
+                  
+        <h1>Creates. Enjoy. Learn.</h1>
+
           <p>
-            <span class="word wisteria">Python</span>
-            <span class="word belize">HTML</span>
-            <span class="word pomegranate">Django</span>
-            <span class="word green">CSS</span>
-            <span class="word midnight">JavaScript</span>
-            <span class="word post">Postgresql</span>
-            <span class="word bash">Bash</span>
-            <span class="word git">Git</span>
-            <span class="word react">React</span>
-            <span class="word boops">Bootstrap</span>
-            <span class="word d">3d's Max</span>
-            <span class="word photo">PhotoShop</span>
+            
+             Hello <br>
+              <br>
+              Welcome to my portfolio <br>
+              I‘m Jhon Rengifo junior web developer, <br>
+              my desire to learn and do my job well are <br>
+              things that motivate me every <br>
+              day to be better and love what I do. <br>
+            
           </p>
-          <button type="button"  id="open-resume">Show Resume</button>
-        </div>
-        <div class="fondo">
-        </div>
+
+
+          <div class="btn-resume" id="open-resume" href="#modalcontainer">
+            Show Resume
+             <div id="btn"> <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <h6>Learning to program has nothing more to do with designing interactive <br> 
+            software than learning to play the type has to do with writing poetry.</h6>
+
+        </section>
       </div>
+
+      
       <div class="about" >
 
         <div class="content">
             <section class="style-porta" id="portafolio" style="padding: 50px 0 0 0;">
-                    <div data-aos="fade-right">
-                        <h1 style="color: black;">Projects</h1>
-                        <hr>
-                    </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                              <div class="img-por">
+                              <!-- <div class="img-por">
                                 <a id="open" href="#modalcontainer">
                                   <img src="{% static 'img/imagen.png' %}">
                                 </a>
                                 <div class="le">
                                   Club Internacional De Futbol Tulua 
                                 </div>
-                              </div>  
+                              </div>   -->
+                              <h1> My Projects</h1>
                             </div>
                             <div class="col-md-6">
-                              <div class="img-por">
+                              <!-- <div class="img-por">
                                 <a id="open-electro" href="#modalcontainer">
                                   <img src="{% static 'img/electro.png' %}">
                                 </a>
                                 <div class="le">
                                   Electro Aires & Aires 
                                 </div>
-                              </div>  
+                              </div>   -->
+
+                              <p>
+                                  During the quarantine I had the opportunity 
+                                  to work in web design with some teachers from
+                                  my university and they gave me some projects
+                                  with which I could evaluate my skills and here
+                                  are some of them:
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                              <!-- <div class="img-por">
+                                <a id="open" href="#modalcontainer">
+                                  <img src="{% static 'img/imagen.png' %}">
+                                </a>
+                                <div class="le">
+                                  Club Internacional De Futbol Tulua 
+                                </div>
+                              </div>   -->
+                              <h1> EF Internacional Tulua 
+                                Escuela de Formacion Deportiva.</h1>
+                            </div>
+
+                            <div class="col-md-6">
+                              <!-- <div class="img-por">
+                                <a id="open" href="#modalcontainer">
+                                  <img src="{% static 'img/imagen.png' %}">
+                                </a>
+                                <div class="le">
+                                  Club Internacional De Futbol Tulua 
+                                </div>
+                              </div>   -->
+                              <h1> Electro Aires & Aires.</h1>
                             </div>
                         </div>
                     </div>
@@ -275,7 +311,6 @@
 
 <script src="{% static 'js/menu.js' %}"></script>
 <script src="{% static 'js/modal.js' %}"></script>
-<script src="{% static 'js/motion.js' %}"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

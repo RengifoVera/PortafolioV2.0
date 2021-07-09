@@ -36,6 +36,7 @@
     opacity: 1;
     pointer-events: auto;
 }
+
 .ventana-modal{
     background: seashell;
     width: 600px;
@@ -276,7 +277,7 @@
 }
 
 .modalbody .correo a:hover {
-    color: #ffc107;
+    color: #1a5dff;
     text-decoration: none;
     transition: all .3s ease;
     background-size: 100% 2px;

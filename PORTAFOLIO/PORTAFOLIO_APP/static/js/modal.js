@@ -48,6 +48,7 @@ open_estudios.addEventListener('click', () =>{
     window.addEventListener('scroll', disableScroll);
 
 }) 
+
 open_resume.addEventListener('click', () =>{
     modalcontainer_resume.classList.add('show');
     window.addEventListener('scroll', disableScroll);
@@ -86,7 +87,6 @@ cerrar_contacto.addEventListener('click', () =>{
     modalcontainer_contacto.classList.remove('show');
     window.removeEventListener('scroll', disableScroll); 
 })
-
 
 function disableScroll(){  
     window.scrollTo(700, 700);
