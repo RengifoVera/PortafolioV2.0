@@ -81,13 +81,13 @@
     width: 100px;
 }
 #cerrar:hover{
-    background-image: radial-gradient(circle at 12.5% 12.5%, #adc743 0, #97c348 10%, #80bd4e 20%, #67b452 30%, #4da956 40%, #2f9c58 50%, #008f59 60%, #00835a 70%, #00795b 80%, #00715d 90%, #006a60 100%);
+    background: #1a5dff;
     color: white;
     transition: opacity 0.3s ease;
 }
 .cabecera-modal{
     margin: 0;
-    background-image: radial-gradient(circle at 12.5% 12.5%, #adc743 0, #97c348 10%, #80bd4e 20%, #67b452 30%, #4da956 40%, #2f9c58 50%, #008f59 60%, #00835a 70%, #00795b 80%, #00715d 90%, #006a60 100%);
+    background-color: #1a5dff;
     width: 108.5%;
     height: 95px;
     margin-left: -50px;
@@ -111,13 +111,13 @@
     width: 100px;
 }
 #cerrar-electro:hover{
-    background:#00b0c7;
+    background:#1a5dff;
     color: white;
     transition: opacity 0.3s ease;
 }
 .cabecera-modal-electro{
     margin: 0;
-    background:#00b0c7;
+    background:#1a5dff;
     width: 108.5%;
     height: 95px;
     margin-left: -50px;
@@ -126,116 +126,6 @@
     padding-top: 14px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-/* Modal Experiencia */
-#cerrar-experiencia{
-    border: 0;
-    background: white;
-    font-size: 15px;
-    font-family: 'Montserrat';
-    cursor: pointer;
-    border-radius: 10px;
-    border: 2px solid gray;
-    width: 100px;
-}
-
-#open-experiencia img{
-    height: 210px;
-    width: 320px;
-    display: block;
-    margin: auto;
-    border: 5px solid  rgb(52, 73, 94 );
-    transition: all .3s ease;
-
-}
-#open-experiencia img:hover{
-    transform: scale(.9,.9);
-    border-radius: 10px;
-    transition: all .3s ease;
-}
-
-.cabecera-modal-experiencia{
-    margin: 0;
-    background:#00b0c7;
-    width: 108.5%;
-    height: 95px;
-    margin-left: -50px;
-    z-index: 1;
-    margin-top: -30px;
-    padding-top: 14px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-/* Modal Estudios */
-
-#open-estudios img{
-    height: 210px;
-    width: 320px;
-    display: block;
-    margin: auto;
-    border: 5px solid  rgb(52, 73, 94 );
-    transition: all .3s ease;
-
-}
-#open-estudios img:hover{
-    transform: scale(.9,.9);
-    border-radius: 10px;
-    transition: all .3s ease;
-}
-
-.cabecera-modal-estudios{
-    margin: 0;
-    background:#00b0c7;
-    width: 108.5%;
-    height: 95px;
-    margin-left: -50px;
-    z-index: 1;
-    margin-top: -30px;
-    padding-top: 14px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-#cerrar-estudios{
-    border: 0;
-    background: white;
-    font-size: 15px;
-    font-family: 'Montserrat';
-    cursor: pointer;
-    border-radius: 10px;
-    border: 2px solid gray;
-    width: 100px;
-}
-
-/* Modal Resume */
-
-#open-resume img:hover{
-    transform: scale(.9,.9);
-    border-radius: 10px;
-    transition: all .3s ease;
-}
-
-.cabecera-modal-resume{
-    margin: 0;
-    background:#00b0c7;
-    width: 108.5%;
-    height: 95px;
-    margin-left: -50px;
-    z-index: 1;
-    margin-top: -30px;
-    padding-top: 14px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-#cerrar-resume{
-    border: 0;
-    background: white;
-    font-size: 15px;
-    font-family: 'Montserrat';
-    cursor: pointer;
-    border-radius: 10px;
-    border: 2px solid gray;
-    width: 100px;
 }
 
 /* modal contacto */

@@ -16,23 +16,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="{% static 'img/favicon.png' %}">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+
 
 
 </head>
 <body>
   <div>
-            <!-- Modal Resume  -->          
-            <div class="modalcontainer"  id="modalcontainer-resume">
-                <div class="ventana-modal">
-                  <div class="cabecera-modal-resume">
-                       Resume
-                       <h6>Web</h6>
-                  </div>
-                    <img src="{% static 'img/imagen.png' %}">
-                    <hr class="section-hr">
-                    <button id="cerrar-resume">Close</button>
-                        </div>
-            </div>
             <!-- Modal Internacional -->
             <div class="modalcontainer"  id="modalcontainer">
                   <div class="ventana-modal">
@@ -68,33 +58,7 @@
                   <button id="cerrar-electro">Close</button>
                 </div>
             </div>
-
-            <!-- Modal Experiencia -->
-            <div class="modalcontainer"  id="modalcontainer-experiencia" >
-              <div class="ventana-modal">
-                  <div class="cabecera-modal-experiencia">
-                     Experiencia
-                    <h6>Desktop App</h6>
-                  </div>
-                    <img style="margin-top: 30px; margin-bottom: 30px; height: 250px; width: 250px;" src="{% static 'img/estudios.jpg' %}">
-                    <hr class="section-hr">
-                    <button id="cerrar-experiencia">Close</button>
-                 </div>
-            </div>
-
-            <!-- Modal Estudios -->
-            <div class="modalcontainer"  id="modalcontainer-estudios" >
-                <div class="ventana-modal">
-                    <div class="cabecera-modal-estudios">
-                      Estudios
-                          <h6>Desktop App</h6>
-                    </div>
-                    <img style="margin-top: 30px; margin-bottom: 30px; height: 250px; width: 250px;" src="{% static 'img/estudios.jpg' %}">
-                      <hr class="section-hr">
-                        <button id="cerrar-estudios">Close</button>
-                </div>
-            </div>
-
+            
             <!-- Modal Contacto -->
             <div class="modalcontainer"  id="modalcontainer-contacto" >
               <div class="ventana-modal">
@@ -130,7 +94,6 @@
             </div>
             <li><a href="#portafolio">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a id="open-contacto" href="#modalcontainer" >Contact</a></li>
           </ul>
 
@@ -138,7 +101,9 @@
             <li>
               <a href="https://www.facebook.com/JhonJRVera" target="_blank"  ><i  class="fab fa-facebook"></i></a> &nbsp;
               <a href="https://github.com/RengifoVera" target="_blank"  ><i class="fab fa-github"></i></a> &nbsp;
-              <a href=" https://twitter.com/JhonJRVera" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp; 
+              <a href=" https://twitter.com/JhonJRVera" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;
+              <a href=" https://www.linkedin.com/in/jhon-rengifo-722273217/" target="_blank"><i class="fab fa-linkedin"></i></i></a>&nbsp;
+              
             </li>
             </ul>
           <div class="icon menu-btn">
@@ -151,11 +116,10 @@
         <section id="presentacion" >   
           <img id="fondo" src="{% static 'img/fondo.png' %}" >
                   
-        <h1>Creates. Enjoy. Learn.</h1>
-
-          <p>
+        <h1 class="circle">Creates. Enjoy. Learn.</h1>
+          <p id="entrada">
             
-             Hello <br>
+             Hello, <br>
               <br>
               Welcome to my portfolio <br>
               I‘m Jhon Rengifo junior web developer, <br>
@@ -166,12 +130,12 @@
           </p>
 
 
-          <div class="btn-resume" id="open-resume" href="#modalcontainer">
-            Show Resume
-             <div id="btn"> <i class="fas fa-arrow-right"></i></div>
+          <div class="btn-resume circle" href="https://www.youtube.com/watch?v=PIU07K_28ck" target="_blank">
+            Download CV
+             <div id="btn" class="circle"> <i class="fas fa-arrow-right"></i></div>
           </div>
 
-          <h6>Learning to program has nothing more to do with designing interactive <br> 
+          <h6 class="circle">Learning to program has nothing more to do with designing interactive <br> 
             software than learning to play the type has to do with writing poetry.</h6>
 
         </section>
@@ -181,31 +145,14 @@
       <div class="about" >
 
         <div class="content">
-            <section class="style-porta" id="portafolio" style="padding: 50px 0 0 0;">
+            <section class="style-porta" id="portafolio" style="padding: 80px 0 0 0;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
-                              <!-- <div class="img-por">
-                                <a id="open" href="#modalcontainer">
-                                  <img src="{% static 'img/imagen.png' %}">
-                                </a>
-                                <div class="le">
-                                  Club Internacional De Futbol Tulua 
-                                </div>
-                              </div>   -->
+                            <div class="col-md-6" data-aos="zoom-in-right">
                               <h1> My Projects</h1>
                             </div>
                             <div class="col-md-6">
-                              <!-- <div class="img-por">
-                                <a id="open-electro" href="#modalcontainer">
-                                  <img src="{% static 'img/electro.png' %}">
-                                </a>
-                                <div class="le">
-                                  Electro Aires & Aires 
-                                </div>
-                              </div>   -->
-
-                              <p>
+                              <p data-aos="zoom-in" id="texto-des">
                                   During the quarantine I had the opportunity 
                                   to work in web design with some teachers from
                                   my university and they gave me some projects
@@ -214,66 +161,84 @@
                                 </p>
                             </div>
 
-                            <div class="col-md-6">
-                              <!-- <div class="img-por">
+                            <div class="col-md-6" data-aos="zoom-in-up">    
+                              <div class="proyectos"> 
                                 <a id="open" href="#modalcontainer">
-                                  <img src="{% static 'img/imagen.png' %}">
-                                </a>
-                                <div class="le">
-                                  Club Internacional De Futbol Tulua 
-                                </div>
-                              </div>   -->
-                              <h1> EF Internacional Tulua 
-                                Escuela de Formacion Deportiva.</h1>
+                                  EF Internacional Tulua Escuela de Formacion Deportiva. 
+                                </a>                               
+                              </div>
                             </div>
 
-                            <div class="col-md-6">
-                              <!-- <div class="img-por">
-                                <a id="open" href="#modalcontainer">
-                                  <img src="{% static 'img/imagen.png' %}">
-                                </a>
-                                <div class="le">
-                                  Club Internacional De Futbol Tulua 
-                                </div>
-                              </div>   -->
-                              <h1> Electro Aires & Aires.</h1>
+                            <div class="col-md-6" data-aos="zoom-in-up">
+                              <div  class="proyectos"> 
+                                <a id="open-electro" href="#modalcontainer">
+                                  Electro Aires & Aires.
+                                </a>                     
+                              </div>
                             </div>
                         </div>
                     </div>
             </section>
-            <section class="style-porta" id="skills" style="padding: 50px 0 0 0;">
-              
-              <div data-aos="fade-right">
-                <h1 style="color:black;">Skills Set</h1>
-                <hr>
-            </div>
-
+            <hr>
+            <section class="style-porta" id="skills" style="padding: 80px 0 0 0;">
+          
             <div class="container">
               <div class="row">
+                <div class="col-md-6" data-aos="zoom-in-right">
+                  <h1> My Skills</h1>
+                </div>
+                <div class="col-md-6">
+                  <p data-aos="zoom-in" id="texto-des">
+                    My programming and development skills 
+                    are still limited but every day I learn and 
+                    research about the most used technologies
+                    and my desire and desire to learn are bigger 
+                    every day.
+                    </p>
+                </div>
+                <h3 data-aos="zoom-in-right" style="text-align: center; padding: 50px 0 0 0;">Programming</h3>
+                <hr>
+                
                 <div class="col-6 col-md-4 tooltips" data-tooltip="Python" ><img class="img-skills" src="{% static 'svg/python.svg' %}"></div>
-                <div class="col-6 col-md-4 tooltips" data-tooltip="HTML"><img class="img-skills" src="{% static 'svg/html.svg' %}"></div>
-                <div class="col-6 col-md-4 tooltips" data-tooltip="CSS"><img class="img-skills" src="{% static 'svg/css.svg' %}"></div>
-
-                <div class="col-6 col-md-4 tooltips" data-tooltip="Django"><img class="img-skills" style="background:white;" src="{% static 'svg/django.svg' %}"></div>
-                <div class="col-6 col-md-4 tooltips" data-tooltip="React"><img class="img-skills" src="{% static 'svg/react.svg' %}"></div>
                 <div class="col-6 col-md-4 tooltips" data-tooltip="JavaScript"><img class="img-skills" src="{% static 'svg/js.svg' %}"></div>
-
+                <div class="col-6 col-md-4 tooltips" data-tooltip="Django"><img class="img-skills" src="{% static 'svg/django.svg' %}"></div>
+                <div class="col-6 col-md-4 tooltips" data-tooltip="Postgresql"><img class="img-skills" src="{% static 'svg/postgresql.svg' %}"></div>
                 <div class="col-6 col-md-4 tooltips" data-tooltip="Git"><img class="img-skills" src="{% static 'svg/git.svg' %}"></div>
                 <div class="col-6 col-md-4 tooltips" data-tooltip="Bash"><img class="img-skills" src="{% static 'svg/bash.svg' %}"></div>
+                
+                <h3 data-aos="zoom-in-right" style="text-align: center; padding: 50px 0 0 0;">Desing</h3>
+                <hr>
                 <div class="col-6 col-md-4 tooltips" data-tooltip="Bootstrap"><img class="img-skills" src="{% static 'svg/bootstrap.svg' %}"></div>
-
+                <div class="col-6 col-md-4 tooltips" data-tooltip="HTML"><img class="img-skills" src="{% static 'svg/html.svg' %}"></div>
+                <div class="col-6 col-md-4 tooltips" data-tooltip="CSS"><img class="img-skills" src="{% static 'svg/css.svg' %}"></div>
                 <div class="col-6 col-md-4 tooltips" data-tooltip="PhotoShop"><img class="img-skills" src="{% static 'svg/photoshop.svg' %}"></div>
                 <div class="col-6 col-md-4 tooltips" data-tooltip="3D's Max"><img class="img-skills" src="{% static 'svg/3ds.svg' %}"></div>
-                <div class="col-6 col-md-4 tooltips" data-tooltip="Postgresql"><img class="img-skills" src="{% static 'svg/postgresql.svg' %}"></div>
             </div>
             </section>  
-            <section  class="style-porta" id="experience" style="padding: 50px 0 0 0;">
-              <div data-aos="fade-right">
-                  <h1>Experience</h1>
-                  <hr>
-              </div>
+            <!-- <hr style="margin: 50px 0 0 0 ;"> -->
+            <!-- <section  class="style-porta" id="experience" style="padding: 80px 0 0 0;">
                <div class="container">
                  <div class="row">
+                  <div class="col-md-6" data-aos="zoom-in-right">
+                    <h1> My Experience</h1>
+                  </div>
+                  <div class="col-md-6">
+                    <p data-aos="zoom-in" id="texto-des">
+                      My experience has developed over the years 
+                      since I was 12 years old I knew HTML and 
+                      I was fascinated with what I could create, 
+                      my hobby was growing more knowing 
+                      programming languages learning them and
+                      more, until I entered to study systems and 
+                      my development process in programming 
+                      advanced a lot, I excel in teamwork, I adapt 
+                      easily to any technology, I am creative, and 
+                      always with the desire to do everything well 
+                      and on time, I have leadership qualities. 
+                      </p>
+                  </div>
+                  <h3 style="text-align: center; margin-top: 50px;" data-aos="zoom-in-right">Resume</h3>
+                  <hr>
                    <div class="col-md-6">
                       <a id="open-experiencia" href="#modalcontainer-experiencia">
                         <img src="{% static 'img/experiencia.jpg' %}">
@@ -286,19 +251,18 @@
                  </div>
                  </div>
                </div>
-            </section>
+            </section> -->
       </div>
     </div>
+ 
 
       <footer id="pie-pag" >
-        <hr id="section-hr">
-        <a href=""><img src="{% static 'img/logo.png' %}"></a>
+        <hr style="margin-top: 200px;">
+        <a  target="_blank" href=""><img src="{% static 'img/logo.png' %}"></a>
           <small>
-              <span>Developed and designed by&nbsp;</span>
-              <a  href="https://twitter.com/JhonJRVera" target="_blank" style="text-decoration: none;">JhonJRVera</a>. ©
-      
-              <script type="text/javascript"> var d=new Date() 
-              document.write(d.getFullYear())</script>
+              <span>Developed and designed by &nbsp; <a href="">JhonJRVera &nbsp; </a> <script type="text/javascript"> var d=new Date() 
+                document.write(d.getFullYear())</script></span>
+              
           </small>
       </footer>
 
@@ -311,12 +275,18 @@
 
 <script src="{% static 'js/menu.js' %}"></script>
 <script src="{% static 'js/modal.js' %}"></script>
+<script src="{% static 'js/motion.js' %}"></script>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+
+
 <script>AOS.init();</script>
 </body>
 </html>
